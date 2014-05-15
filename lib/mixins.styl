@@ -1,0 +1,93 @@
+/**
+ * Internal positions helper.
+ * @mixin
+ * @private
+ */
+
+positions--helper(type, args)
+  i = 0
+  position unquote(type)
+  for j in (1..4)
+    if length(args) > i
+      {args[i]}: args[i + 1] is a 'unit' ? args[i += 1] : 0
+    i += 1
+
+/*
+ * Position `fixed` utility.
+ *
+ * Synopsis:
+ *
+ *   fixed: <pos> [n] <pos> [n]
+ *
+ * Example:
+ *
+ *   ```stylus
+ *   html
+ *     fixed top left 5px
+ *   ```
+ *
+ *   ```css
+ *   html {
+ *     position: fixed;
+ *     top: 0;
+ *     left: 5px;
+ *   }
+ *   ```
+ * @type mixin
+ */
+
+fixed()
+  positions--helper('fixed', arguments)
+
+/*
+ * Position `absolute` utility.
+ *
+ * Synopsis:
+ *
+ *   absolute: <pos> [n] <pos> [n]
+ *
+ * Example:
+ *
+ *   ```stylus
+ *   html
+ *     absolute top 15px
+ *   ```
+ *
+ *   ```css
+ *   html {
+ *     position: absolute;
+ *     top: 15px;
+ *   }
+ *   ```
+ * @type mixin
+ */
+
+absolute()
+  positions--helper('absolute', arguments)
+
+/*
+ * Position `relative` utility.
+ *
+ * Synopsis:
+ *
+ *   relative: <pos> [n] <pos> [n]
+ *
+ * Example:
+ *
+ *   ```stylus
+ *   html
+ *     relative top 3px left 3px
+ *   ```
+ *
+ *   ```css
+ *   html {
+ *     position: relative;
+ *     top: 3px;
+ *     left: 3px;
+ *   }
+ *   ```
+ * @type mixin
+ */
+
+relative()
+  positions--helper('relative', arguments)
