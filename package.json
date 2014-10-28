@@ -1,11 +1,10 @@
 {
   "name" : "shoelace-ui-positions",
-  "version" : "0.0.1",
+  "version" : "0.1.0",
   "description" : "`positions` transparent mixin",
   "repository" : "https://github.com/shoelace-ui/positions.git",
   "keywords" : ["stylus", "shoelace", "fixed", "relative", "absolute", "pos", "position", "positions"],
   "author" : "Michael Andrew Vanasse <mail@mndvns.com>",
   "license" : "MIT",
-  "dependencies": {
-  }
+  "dependencies": {}
 }

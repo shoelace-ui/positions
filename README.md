@@ -1,11 +1,11 @@
 # positions
 
-`positions` transparent mixin.
+`positions` transparent mixin, stolen from [nib](https://github.com/tj/nib).
 
 ## Installation
 
 ```sh
-$ npm install git://github.com/shoelace-ui/positions.git
+$ npm install shoelace-ui-positions
 ```
 
 ## License
